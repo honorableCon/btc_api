@@ -1,27 +1,22 @@
 {
-  "name": "authserverjwt",
+  "name": "btc_api",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "api/index.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "github.com:honorableCon/AuthServerJWT.git"
-  },
-  "author": "honorablecon",
-  "license": "MIT",
-  "devDependencies": {
-    "nodemon": "^2.0.19"
-  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.0.1",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "joi": "^17.6.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongodb": "^4.7.0"
+    "axios": "^1.2.0",
+    "bitcore-lib": "^8.25.40",
+    "bitcore-mnemonic": "^8.25.40",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
