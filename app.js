@@ -2,10 +2,12 @@ const express = require("express");
 const app = express();
 const { sendBitcoin } = require("./service/transactions");
 const { createWallet } = require("./service/wallet");
+const bodyParser = require("body-parser");
 
 const port = process.env.PORT || 5000;
 
 app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post("/wallet", (req, res) => {
   const { network } = req.body;
